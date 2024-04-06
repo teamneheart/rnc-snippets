@@ -1,0 +1,8 @@
+{
+    "ImportReactNative" :{
+        "body": "Import React from react",
+        "description": "",
+        "prefix": "imp",
+        "scope": "typescript"
+    },
+}

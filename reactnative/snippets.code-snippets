@@ -1,0 +1,319 @@
+{
+    "Import (RN-Snippets)": {
+      "prefix": "imp",
+      "body": ["import ${1:Modules} from \"${2:ModulePath}\";"],
+      "description": "Import (RN-Snippets)"
+    },
+    "Import React (RN-Snippets)": {
+      "prefix": "react",
+      "body": ["import React from 'react';"],
+      "description": "Import React (RN-Snippets)"
+    },
+    "Import React Native Class Component (RN-Snippets)": {
+      "prefix": "rnc",
+      "body": [
+        "import React, { Component } from 'react';",
+        "import { View, Text } from 'react-native';",
+        "",
+        "export default class $TM_FILENAME_BASE extends Component {",
+        "  constructor(props) {",
+        "    super(props);",
+        "    this.state = {",
+        "    };",
+        "  }",
+        "",
+        "  render() {",
+        "    return (",
+        "      <View>",
+        "        <Text> $TM_FILENAME_BASE </Text>",
+        "      </View>",
+        "    );",
+        "  }",
+        "}",
+        ""
+      ],
+      "description": "Import React Native Class Component (RN-Snippets)"
+    },
+    "React Native Internal Stylesheet (RN-Snippets)": {
+      "prefix": "rnss",
+      "body": [
+        "const styles = StyleSheet.create({",
+        "${1:Style_Name}:{",
+        "$0",
+        "}",
+        "});"
+      ],
+      "description": "React Native Internal Stylesheet (RN-Snippets)"
+    },
+    "React Native Inline Stylesheet (RN-Snippets)": {
+      "prefix": "style",
+      "body": ["style={{$0}}"],
+      "description": "React Native Inline Stylesheet (RN-Snippets)"
+    },
+    "React Native Stylesheet (RN-Snippets)": {
+      "prefix": "sty",
+      "body": ["style={styles.$0}"],
+      "description": "React Native Stylesheet (RN-Snippets)"
+    },
+    "React Native Function Component (RN-Snippets)": {
+      "prefix": "rnf",
+      "body": [
+        "import React from 'react'",
+        "import { View, Text } from 'react-native'",
+        "",
+        "export default function $TM_FILENAME_BASE() {",
+        "    return (",
+        "        <View>",
+        "            <Text>$TM_FILENAME_BASE</Text>",
+        "        </View>",
+        "    )",
+        "}",
+        ""
+      ],
+      "description": "React Native Function Component (RN-Snippets)"
+    },
+    "React Native Function Component with Props (RN-Snippets)": {
+      "prefix": "rnfp",
+      "body": [
+        "import React from 'react'",
+        "import { View, Text } from 'react-native'",
+        "",
+        "export default function $TM_FILENAME_BASE(props) {",
+        "    return (",
+        "        <View>",
+        "            <Text>$TM_FILENAME_BASE</Text>",
+        "        </View>",
+        "    )",
+        "}",
+        ""
+      ],
+      "description": "React Native Function Component with Props (RN-Snippets)"
+    },
+    "React Native Arrow Function Component with Props (RN-Snippets)": {
+      "prefix": "rnafp",
+      "body": [
+        "import React from 'react'",
+        "import { View, Text } from 'react-native'",
+        "",
+        "const $TM_FILENAME_BASE= (props) => {",
+        "    return (",
+        "        <View>",
+        "            <Text>$TM_FILENAME_BASE</Text>",
+        "        </View>",
+        "    )",
+        "}",
+        "",
+        "export default $TM_FILENAME_BASE",
+        ""
+      ],
+      "description": "React Native Arrow Function Component with Props (RN-Snippets)"
+    },
+    "React Native Arrow Function Component (RN-Snippets)": {
+      "prefix": "rnaf",
+      "body": [
+        "import React from 'react'",
+        "import { View, Text } from 'react-native'",
+        "",
+        "const $TM_FILENAME_BASE= () => {",
+        "    return (",
+        "        <View>",
+        "            <Text>$TM_FILENAME_BASE</Text>",
+        "        </View>",
+        "    )",
+        "}",
+        "",
+        "export default $TM_FILENAME_BASE",
+        ""
+      ],
+      "description": "React Native Arrow Function Component with Props (RN-Snippets)"
+    },
+    "React Native Arrow Function Component With StyleSheet with Props (RN-Snippets)": {
+      "prefix": "rnfs",
+      "body": [
+        "import React from 'react'",
+        "import { StyleSheet, Text, View } from 'react-native'",
+        "",
+        "const $TM_FILENAME_BASE = () => {",
+        "    return (",
+        "        <View>",
+        "            <Text>$TM_FILENAME_BASE</Text>",
+        "        </View>",
+        "    )",
+        "}",
+        "",
+        "export default $TM_FILENAME_BASE",
+        "",
+        "const styles = StyleSheet.create({})",
+        ""
+      ],
+      "description": "React Native Arrow Function Component With StyleSheet with Props (RN-Snippets)"
+    },
+    "Export Component (RN-Snippets)": {
+      "prefix": "exp",
+      "body": ["export default ${1:Component Name}"],
+      "description": "Export Component (RN-Snippets)"
+    },
+    "React native Class Component With Stylsheet (RN-Snippets)": {
+      "prefix": "rncs",
+      "body": [
+        "import React, { Component } from 'react';",
+        "import { View, Text, StyleSheet } from 'react-native';",
+        "",
+        "export default class Preview extends Component {",
+        "  constructor(props) {",
+        "    super(props);",
+        "    this.state = {",
+        "    };",
+        "  }",
+        "",
+        "  render() {",
+        "    return (",
+        "      <View>",
+        "        <Text> Preview </Text>",
+        "      </View>",
+        "    );",
+        "  }",
+        "}",
+        "",
+        "const styles = StyleSheet.create({})",
+        "",
+        ""
+      ],
+      "description": "React native Class Component With Stylsheet (RN-Snippets)"
+    },
+  
+    // Api Call Snippents
+    // react native Exios
+    // Token
+  
+    "Get Api Snippet(RN-Snippets)": {
+      "prefix": "rnget",
+      "body": [
+        "const ${1:functionName}= () => {",
+        "  get(constant.${2:apiname})",
+        "    .then((responce) => {",
+        "      console.log(\"${2:apiname} Api Responce\", responce);",
+        "$0",
+        "    })",
+        "    .catch((error) => {",
+        "      console.log(\"${2:apiname} Api Error\", error);",
+        "    });",
+        "};",
+        ""
+      ],
+      "description": "Get Api Snippet(RN-Snippets)"
+    },
+  
+    "Get with params Api Snippet(RN-Snippets)": {
+      "prefix": "rngp",
+      "body": [
+        "",
+        "",
+        "const ${1:functionName}= () => {",
+        "  let formData = new FormData();",
+        "  formData.append(params.${2:paramsName}, id);",
+        "",
+        "  getWithParams(constant.${3:apiname}, formData, token)",
+        "    .then((responce) => {",
+        "      console.log(\"${3:apiname} Api Responce\", responce);",
+        "$0",
+        "    })",
+        "    .catch((error) => {",
+        "      console.log(\"${3:apiname} Api Error\", error);",
+        "    });",
+        "};",
+        ""
+      ],
+      "description": "Get with params Api Snippet(RN-Snippets)"
+    },
+  
+    "do post with params and auth Api Snippet(RN-Snippets)": {
+      "prefix": "rnpwa",
+      "body": [
+        "",
+        "",
+        "const ${1:functionName}= () => {",
+        "  let formData = new FormData();",
+        "  formData.append(params.${2:paramsName}, id);",
+        "",
+        "  doPostWithAuth(constant.${3:apiname}, formData, token)",
+        "    .then((responce) => {",
+        "      console.log(\"${3:apiname} Api Responce\", responce);",
+        "$0",
+        "    })",
+        "    .catch((error) => {",
+        "      console.log(\"${3:apiname} Api Error\", error);",
+        "    });",
+        "};",
+        ""
+      ],
+      "description": "do post with params Api Snippet(RN-Snippets)"
+    },
+  
+    "do post with params Api Snippet(RN-Snippets)": {
+      "prefix": "rnpost",
+      "body": [
+        "",
+        "",
+        "const ${1:functionName}= () => {",
+        "  let formData = new FormData();",
+        "  formData.append(params.${2:paramsName}, id);",
+        "",
+        "  doPost(constant.${3:apiname}, formData)",
+        "    .then((responce) => {",
+        "      console.log(\"${3:apiname} Api Responce\", responce);",
+        "$0",
+        "    })",
+        "    .catch((error) => {",
+        "      console.log(\"${3:apiname} Api Error\", error);",
+        "    });",
+        "};",
+        ""
+      ],
+      "description": "do post with params Api Snippet(RN-Snippets)"
+    },
+  
+    "do put with params and auth Api Snippet(RN-Snippets)": {
+      "prefix": "rnput",
+      "body": [
+        "",
+        "",
+        "const ${1:functionName}= () => {",
+        "  let formData = new FormData();",
+        "  formData.append(params.${2:paramsName}, id);",
+        "",
+        "  doPut(constant.${3:apiname}, formData, token)",
+        "    .then((responce) => {",
+        "      console.log(\"${3:apiname} Api Responce\", responce);",
+        "$0",
+        "    })",
+        "    .catch((error) => {",
+        "      console.log(\"${3:apiname} Api Error\", error);",
+        "    });",
+        "};",
+        ""
+      ],
+      "description": "do put with params and auth Api Snippet(RN-Snippets)"
+    },
+  
+    "delete with auth Api Snippet(RN-Snippets)": {
+      "prefix": "rndel",
+      "body": [
+        "",
+        "",
+        "const ${1:functionName}= () => {",
+        "  doDelete(constant.${2:apiname}, token)",
+        "    .then((responce) => {",
+        "      console.log(\"${2:apiname} Api Responce\", responce);",
+        "$0",
+        "    })",
+        "    .catch((error) => {",
+        "      console.log(\"${2:apiname} Api Error\", error);",
+        "    });",
+        "};",
+        ""
+      ],
+      "description": "delete with auth Api Snippet(RN-Snippets)"
+    }
+  }
+  
